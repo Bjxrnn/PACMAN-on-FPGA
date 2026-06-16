@@ -2,13 +2,13 @@
 
 A maze-chase game built entirely in Verilog for the **Xilinx Basys 3** FPGA board. The player navigates a procedurally generated maze, collects pellets, and avoids three ghosts with distinct AI behaviours — all rendered live on a 96×64 OLED display.
 
-This project was completed as a final design project for a digital design / FPGA module, by a four-person team (Team S5_06).
+This project was completed as a final design project for a digital design module (EE2026), by a four-person team.
 
 ---
 
 ## Overview
 
-PECMEN reimagines the classic Pac-Man formula as a from-scratch hardware system rather than a software game. Every element — maze generation, ghost pathfinding, collision detection, audio, and rendering — runs as dedicated Verilog logic on the FPGA, with no soft-core processor involved.
+PECMEN reimagines the classic Pac-Man formula as a from-scratch hardware system rather than a software game. Every element - maze generation, ghost pathfinding, collision detection, audio, and rendering — runs as dedicated Verilog logic on the FPGA, with no soft-core processor involved.
 
 Core gameplay features:
 - A **freshly randomised maze** every round, generated procedurally rather than hardcoded
