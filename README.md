@@ -90,16 +90,6 @@ A shared query bus exposes maze-tile and pellet-state information to the modules
 - A 2-second immunity window follows each spawn or collision, indicated by a 4 Hz LED blink
 
 ---
-
-## Repository Structure
-
-```
-PECMEN-PacMan-FPGA/
-├── README.md
-├── docs/
-│   └── Report_S5_06.pdf      # Full project report (component write-ups, screenshots, references)
-└── vivado_project/
-    └── FDP_Pacman.xpr        # Vivado project descriptor (Vivado 2018.2, target part xc7a35tcpg236-1)
 ```
 
 > **Note:** This repository currently includes the Vivado project descriptor and full report, but not the underlying `.v` source files / `.xdc` constraints themselves. The `.xpr` file references the following modules, which can be dropped into a `sources_1/new/` folder alongside it to restore a buildable project: `top_student.v`, `game_fsm.v`, `renderer.v`, `Oled_display.v`, `chase_ghost.v`, `random_ghost.v`, `charge_ghost.v`, `maze_generator.v`, `pellet_manager.v`, `score_display.v`, `audio_bgm.v`, `clk_divider.v`, `debounce.v`, and the constraint file `my_constraints.xdc`.
